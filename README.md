@@ -1,70 +1,34 @@
-# Getting Started with Create React App
+## Date Picker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+설정 대화상자를 제작합니다 <br>
 
-## Available Scripts
+- 임의의 버튼 "설정 대화상자 열기" 클릭 시 설정 대화상자 팝업
+- 대화상자 뒷 쪽은 반투명 상태로 오버레이
+- 대화상자 영역 밖을 클릭시 대화상자 사라짐
+- 설정된 값을 json 형식으로 localStorage에 저장
+- 대화상자 팝업시 저장된 데이터 로드
+- "완료" 버튼 누르면 현재 상태 저장 후 대화상자 종료
 
-In the project directory, you can run:
+---
 
-### `yarn start`
+✅ 최초로딩시 : 저장된 데이터 없는 경우 <br>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+#### 날짜 컴포넌트
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- 현재 날짜로 자동 설정됨
 
-### `yarn test`
+#### 시간 컴포넌트
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- 분 시간 컴포넌트 : 현재 시간을 10분 단위 범위로 하여 선택됨
+- 시 시간 컴포넌트 : 현재 시간으로 선택됨
 
-### `yarn build`
+#### 달력 컴포넌트
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- 날짜 선택 컴포넌트 클릭시 팝업, 최초 로딩시 현재 날짜에 맞는 달력이 표시되어야 함
+- 날짜 선택 후 다른 날짜 클릭시, 첫번째 선택한 날짜 부터 두번째 선택한 날짜들 모두 활성화 상태 표시
+- 선택한 날짜들 의외의 날짜 클릭시, 기존에 선택된 날짜들은 해제되고, 새로 선택한 날짜가 선택
+- 선택된 날짜들 내에서 날찌 클릭시, 그 날짜까지 선택된 것으로 변경되어야 함.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 참고문헌
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+https://velopert.com/814
