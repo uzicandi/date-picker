@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const SettingsPage = () => {
+export const FirstPage = () => {
   // dispatch 하면 Dialog뜨게
   const handleDialogClick = () => {
     console.log('click');

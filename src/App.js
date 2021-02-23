@@ -1,10 +1,13 @@
+import React, { Component } from 'react';
 import './App.scss';
-import { SettingsPage } from './components/SettingsPage';
+import { FirstPage } from './components/FirstPage';
+import { ExamPeriodPage } from './components/ExamPeriodPage';
 
 function App() {
   return (
     <>
-      <SettingsPage />
+      <FirstPage />
+      <ExamPeriodPage />
     </>
   );
 }
