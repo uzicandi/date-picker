@@ -1,0 +1,12 @@
+//@import './constants/_style.scss';
+
+$ocYellow2: #ffec99;
+
+.PageBody {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  background: $ocYellow2;
+}
