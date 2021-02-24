@@ -25,7 +25,8 @@ export default function dialog(state = initialState, action) {
       };
     case CLOSE_DIALOG:
       return {
-        ...state
+        ...state,
+        open: false
       };
     default:
       return state;
